@@ -1,0 +1,93 @@
+.main-content {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  background-color: white;
+  height: 100vh;
+}
+
+.cpr {
+  &_header-section {
+    background-color: #5e716a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    img {
+      width: 60px;
+    }
+    &_title {
+      color: #fff;
+      // font-weight: 600;
+      margin-left: 0.5rem;
+      font-size: 34px;
+    }
+  }
+
+  &_form {
+    &-toggle {
+      padding: 0.5rem 0;
+      box-shadow: 1px 3px 5px #888888;
+      border-radius: 10px;
+      color: gray;
+      display: inline-flex;
+      margin-bottom: 10px;
+      &_option {
+        border-bottom: 1px solid gray;
+        padding: 5px 10px 10px;
+        &-active {
+          border-bottom: 2px solid rgb(3, 88, 168);
+          color: rgb(3, 88, 168);
+        }
+      }
+    }
+    &-container {
+      margin: 2rem;
+    }
+    &-btn {
+      &_container{
+        display: flex;
+        gap: 1rem;
+      }
+      background-color: rgb(73, 151, 241);
+      color: #fff;
+      padding: 10px;
+      border: none;
+      font-weight: 600;
+      border-radius: 5px;
+
+      &_secondary {
+        border: 2px solid rgb(73, 151, 241);
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        color: rgb(73, 151, 241);
+      }
+    }
+    &-label{
+      width: 60px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    &-radiobtn{
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 20px;
+
+    }
+  }
+
+  &_request-deployed {
+    text-align: center;
+    margin-top: 2rem;
+
+    &_heading {
+      font-size: 45px;
+      text-transform: uppercase;
+      color: peru;
+    }
+    &_data {
+      color: darkblue;
+      margin-top: 15px;
+    }
+  }
+}
